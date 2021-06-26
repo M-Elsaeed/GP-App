@@ -48,3 +48,6 @@ def classify():
             count += 1
             hM[tempResult] += 1
     return jsonify(finalResult=result, message="Success", statusCode=200), 200
+
+if __name__ == '__main__':
+    app.run(threaded=True, port=5000)
